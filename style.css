@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+
+
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(255, 178, 139);
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+html::webkit-scrollbar {
+    width: 10px;
+    height: 100px;
+}
+
+.navbar {
+    background: linear-gradient(0.25turn, rgb(108, 57, 139), rgb(255, 178, 139), rgb(17, 17, 17));
+    position: fixed;
+
+}
+
+.navbar-nav-a {
+    font-family: "sinete", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.navbar-brand {
+    margin-left: 3%;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(17, 17, 17);
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "sinete", sans-serif;
+    font-style: normal;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(17, 17, 17);
+    font-family: "sinete", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(242, 189, 194, 0.8);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.w-100 {
+    height: 100vh
+}
+
+@media only screen and (max-width:1000px) {
+    .navbar-nav.ms-auto {
+        background: rgb(17, 17, 17, 0.5);
+        max-width: 100%;
+
+
+    }
+
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: rgb(255, 178, 139);
+
+    }
+}
+
+
+
+/*  color pallete: 
+dark black: RGB (17,17,17)
+orange: RGB (255,178,139)
+purple: RGB(65,17,95)
+white
+dark orange: RGB (165,77,91)
+black
+
+*/
