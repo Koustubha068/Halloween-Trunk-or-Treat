@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(17, 17, 17);
+    background: linear-gradient(rgb(255, 178, 139),rgb(17, 17, 17,0.9),rgb(17, 17, 17,0.9),rgb(255, 178, 139));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,12 @@ body {
     position: relative;
 
 }
-
+.creepster-regular {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 
 
@@ -28,13 +33,13 @@ html::webkit-scrollbar {
 }
 
 .navbar {
-    background: linear-gradient(0.25turn, rgb(108, 57, 139), rgb(255, 178, 139), rgb(17, 17, 17));
+    background: linear-gradient(0.25turn,rgb(17, 17, 17));
     position: fixed;
 
 }
 
 .navbar-nav-a {
-    font-family: "sinete", sans-serif;
+    font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
 
@@ -49,13 +54,14 @@ html::webkit-scrollbar {
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 2px;
-    font-family: "sinete", sans-serif;
+    font-family: "Creepster", system-ui;
     font-style: normal;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(17, 17, 17);
-    font-family: "sinete", sans-serif;
+    font-family: "Creepster", system-ui;
+    font-style: normal;
     font-weight: bold;
     font-style: normal;
     font-size: 22px;
@@ -112,6 +118,64 @@ html::webkit-scrollbar {
 }
 
 
+/* start of intro*/
+
+  
+.glow {
+    font-size: 6rem; /* Large font size */
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 
+        0 0 5px #ffcc00, /* Golden glow */
+        0 0 10px rgb(65,17,95),
+        0 0 15px #ffcc00,
+        0 0 20px rgb(65,17,95),
+        0 0 30px #ff9900,
+        0 0 40px rgb(65,17,95),
+        0 0 50px #ff9900;
+    animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+    from {
+        text-shadow: 
+            0 0 5px #ffcc00,
+            0 0 10px rgb(65,17,95),
+            0 0 15px #ffcc00,
+            0 0 20px rgb(65,17,95),
+            0 0 30px #ff9900,
+            0 0 40px rgb(65,17,95),
+            0 0 50px #ff9900;
+    }
+    to {
+        text-shadow: 
+            0 0 10px #ffcc00,
+            0 0 20px #ffcc00,
+            0 0 30px #ffcc00,
+            0 0 40px #ff9900,
+            0 0 50px #ff9900,
+            0 0 60px #ff9900,
+            0 0 70px #ff9900;
+    }
+}
+/* end of intro*/
+
+.btn {
+    box-shadow: 10px 5px 3px rgba(26, 26, 42, 0.4);
+    font-size: 1.5rem;
+    background-color: rgb(17, 17, 17,0.9);
+    color: #ff9900;
+    font-family: "Creepster", system-ui;
+ 
+}
+
+.btn:hover{
+
+    background-color: #915f15;
+    color:rgb(17, 17, 17,0.9);
+    font-family: "Creepster", system-ui;
+}
 
 /*  color pallete: 
 dark black: RGB (17,17,17)
