@@ -123,7 +123,7 @@ html::webkit-scrollbar {
 
   
 .glow {
-    font-size: 5rem; /* Large font size */
+    font-size: 5.5rem; /* Large font size */
     font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -164,7 +164,7 @@ html::webkit-scrollbar {
 
 .toggle-button {
     box-shadow: 10px 5px 3px rgba(26, 26, 42, 0.4);
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: rgb(17, 17, 17, 0.9);
     color: #ff9900;
     font-family: "Creepster", system-ui;
