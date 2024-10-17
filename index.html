@@ -88,29 +88,88 @@
     <div class="row">
         <div class="col-md-4 image-container">
             <img src="Toy Story.jpg" alt="Trunk 1" class="trunk-image">
-            <div class="img-description">Trunk 1 Description</div>
+            <div class="img-description">Toy Story Trunk!</div>
         </div>
         <div class="col-md-4 image-container">
             <img src="pirates.jpg" alt="Trunk 2" class="trunk-image">
-            <div class="img-description">Trunk 2 Description</div>
+            <div class="img-description">Pirates Trunk!</div>
         </div>
         <div class="col-md-4 image-container">
             <img src="Liptzin.jpg" alt="Trunk 3" class="trunk-image">
-            <div class="img-description">Trunk 3 Description</div>
+            <div class="img-description">Mr. Liptzin!!</div>
         </div>
         <div class="col-md-4 image-container">
             <img src="Hawaii.jpg" alt="Trunk 4" class="trunk-image">
-            <div class="img-description">Trunk 4 Description</div>
+            <div class="img-description">Hawaii Trunk</div>
         </div>
         <div class="col-md-4 image-container">
             <img src="Dinousaurs.jpg" alt="Trunk 5" class="trunk-image">
-            <div class="img-description">Trunk 5 Description</div>
+            <div class="img-description">Dinousaurs Trunk!</div>
         </div>
         <div class="col-md-4 image-container">
             <img src="mariobros.jpg" alt="Trunk 6" class="trunk-image">
-            <div class="img-description">Trunk 6 Description</div>
+            <div class="img-description">Mario Trunk!</div>
         </div>
     </div>
+
+
+    <h1 class="text-center">Marlboro Trunk or Treat Event</h1>
+
+    <div class="event">
+        <div class="event-heading">Date</div>
+        <div class="event-details">
+            <p><strong> Date</strong> October 29th</p>
+            <p><strong> Rain Date:</strong> October 30th</p>
+            <img src="mariobros.jpg" alt="Trunk 6" class="trunk-image-event">
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-heading">Time</div>
+        <div class="event-details">
+            <p>Setup: 3:00 PM</p>
+            <p>Event: 4:00 PM - 5:30 PM</p>
+            <p>Cleanup: 5:30 PM - 6:00 PM</p>
+            <img src="Dinousaurs.jpg" alt="Trunk 5" class="trunk-image-event">
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-heading">Location: Marlboro High School Parking Lot</div>
+        <div class="event-details">
+            <p><strong>Highlights:</strong> Free event, Nut-free, Music, Games, Face Painting.</p>
+            <img src="Hawaii.jpg" alt="Trunk 4" class="trunk-image-event">
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-heading">Event Highlights</div>
+        <div class="event-details">
+            <p>Free Event Donations for the American Cancer Society.</p>
+            <p>Ages: 12 and under.</p>
+            <p>Music & Fun Activities Enjoy great music, games, and more.</p>
+            <p>Face Painting (To be confirmed with Lauren Fraser).</p>
+            <img src="Liptzin.jpg" alt="Trunk 3" class="trunk-image-event">
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-heading">Vendors:</div>
+        <div class="event-details">
+            <p>Feds on the Go Snacks available for purchase.</p>
+            <p>Goldys Ice Cream Delicious ice cream for sale.</p>
+            <img src="pirates.jpg" alt="Trunk 2" class="trunk-image-event">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 </div>
 
 
@@ -124,18 +183,24 @@
  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script>
 $(document).ready(function () {
-            // Button click functionality
-            $('.toggle-button').on('click', function () {
-                $('.description').toggle(); 
-            });
+    // Toggle for event details
+    $('.event-heading').on('click', function () {
+        $(this).next('.event-details').slideToggle(); // Toggles the details related to the clicked heading
+    });
 
-            // Image hover functionality
-            $('.image-container').on('mouseenter', function () {
-                $(this).find('.img-description').fadeIn();
-            }).on('mouseleave', function () {
-                $(this).find('.img-description').fadeOut();
-            });
-        });
+    // Toggle for button click 
+    $('.toggle-button').on('click', function () {
+        $('.description').slideToggle(); 
+    });
+
+    // Hover effect for image cards
+    $('.image-container').on('mouseenter', function () {
+        $(this).find('.description').fadeIn();
+    }).on('mouseleave', function () {
+        $(this).find('.description').fadeOut();
+    });
+});
+
 
 </script>
 </body>

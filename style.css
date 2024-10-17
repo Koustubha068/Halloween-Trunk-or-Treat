@@ -221,6 +221,26 @@ html::webkit-scrollbar {
     margin-bottom: 20px; 
 }
 
+.event-heading {
+    cursor: pointer;
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.event-details {
+    display: none;
+    padding: 10px;
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+}
+.trunk-image-event {
+    width: 200px;  
+    height: auto;  
+    max-width: 100%; 
+}
+
+
 /*  color pallete: 
 dark black: RGB (17,17,17)
 orange: RGB (255,178,139)
