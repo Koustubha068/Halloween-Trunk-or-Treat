@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#ff9900,rgb(17, 17, 17,0.9),rgb(17, 17, 17,0.9),#ff9900);
+    background: linear-gradient(#ff9900,rgb(17, 17, 17,0.9),rgb(17, 17, 17,0.9),rgb(17, 17, 17,0.9),#ff9900);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,7 @@ html::webkit-scrollbar {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(242, 189, 194, 0.8);
+    background-color: #915f15;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -112,7 +112,7 @@ html::webkit-scrollbar {
         padding: 1px 5px;
         font-size: 18px;
         line-height: 0.3;
-        background: rgb(255, 178, 139);
+        background: #915f15;
 
     }
 }
@@ -161,7 +161,7 @@ html::webkit-scrollbar {
 }
 /* end of intro*/
 
-.btn {
+.toggle-button {
     box-shadow: 10px 5px 3px rgba(26, 26, 42, 0.4);
     font-size: 1.5rem;
     background-color: rgb(17, 17, 17,0.9);
@@ -170,7 +170,7 @@ html::webkit-scrollbar {
  
 }
 
-.btn:hover{
+.toggle-button:hover{
 
     background-color: #915f15;
     color:rgb(17, 17, 17,0.9);
