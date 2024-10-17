@@ -82,6 +82,40 @@
 
  <!-- intro end-->
 
+ <!-- start of imgs-->
+ <div class="container mt-5">
+    <h1 class="text-center">Trunk Showcase</h1>
+    <div class="row">
+        <div class="col-md-4 image-container">
+            <img src="image1.jpg" alt="Trunk 1" class="trunk-image">
+            <div class="img-description">Trunk 1 Description</div>
+        </div>
+        <div class="col-md-4 image-container">
+            <img src="image2.jpg" alt="Trunk 2" class="trunk-image">
+            <div class="img-description">Trunk 2 Description</div>
+        </div>
+        <div class="col-md-4 image-container">
+            <img src="image3.jpg" alt="Trunk 3" class="trunk-image">
+            <div class="img-description">Trunk 3 Description</div>
+        </div>
+        <div class="col-md-4 image-container">
+            <img src="image4.jpg" alt="Trunk 4" class="trunk-image">
+            <div class="img-description">Trunk 4 Description</div>
+        </div>
+        <div class="col-md-4 image-container">
+            <img src="image5.jpg" alt="Trunk 5" class="trunk-image">
+            <div class="img-description">Trunk 5 Description</div>
+        </div>
+        <div class="col-md-4 image-container">
+            <img src="image6.jpg" alt="Trunk 6" class="trunk-image">
+            <div class="img-description">Trunk 6 Description</div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- end of imgs-->
+
 
 
 
@@ -89,14 +123,19 @@
  
  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script>
- $(document).ready(function(){
-     $('.toggle-button').on('click', function(){
-        $('.description').toggle();
+$(document).ready(function () {
+            // Button click functionality
+            $('.toggle-button').on('click', function () {
+                $('.description').toggle(); 
+            });
 
-     });
-  
-
- });
+            // Image hover functionality
+            $('.image-container').on('mouseenter', function () {
+                $(this).find('.img-description').fadeIn();
+            }).on('mouseleave', function () {
+                $(this).find('.img-description').fadeOut();
+            });
+        });
 
 </script>
 </body>
