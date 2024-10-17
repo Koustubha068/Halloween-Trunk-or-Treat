@@ -255,6 +255,12 @@ html::webkit-scrollbar {
     color: #ff9900;
     font-family: "Creepster", system-ui;
 }
+p{
+    font-family: "Creepster", system-ui;
+}
+.event-heading{
+    font-family: "Creepster", system-ui;
+}
 
 /*  color pallete: 
 dark black: RGB (17,17,17)
