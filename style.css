@@ -34,7 +34,8 @@ html::webkit-scrollbar {
 
 .navbar {
     background: linear-gradient(0.25turn,rgb(17, 17, 17));
-    position: fixed;
+    position: fixed; 
+      
 
 }
 
@@ -122,12 +123,12 @@ html::webkit-scrollbar {
 
   
 .glow {
-    font-size: 6rem; /* Large font size */
+    font-size: 4rem; /* Large font size */
     font-family: "Creepster", system-ui;
     font-weight: 400;
     font-style: normal;
     text-shadow: 
-        0 0 5px #ffcc00, /* Golden glow */
+        0 0 5px #ffcc00, 
         0 0 10px rgb(65,17,95),
         0 0 15px #ffcc00,
         0 0 20px rgb(65,17,95),
@@ -164,17 +165,30 @@ html::webkit-scrollbar {
 .toggle-button {
     box-shadow: 10px 5px 3px rgba(26, 26, 42, 0.4);
     font-size: 1.5rem;
-    background-color: rgb(17, 17, 17,0.9);
+    background-color: rgb(17, 17, 17, 0.9);
     color: #ff9900;
     font-family: "Creepster", system-ui;
- 
 }
 
-.toggle-button:hover{
-
+.toggle-button:hover {
     background-color: #915f15;
-    color:rgb(17, 17, 17,0.9);
+    color: rgb(17, 17, 17, 0.9);
     font-family: "Creepster", system-ui;
+}
+
+.description {
+    display: none; 
+    text-align: center; 
+    color: white;
+    margin-top: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  
 }
 
 /*  color pallete: 
