@@ -164,7 +164,7 @@ html::webkit-scrollbar {
 
 .toggle-button {
     box-shadow: 10px 5px 3px rgba(26, 26, 42, 0.4);
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: rgb(17, 17, 17, 0.9);
     color: #ff9900;
     font-family: "Creepster", system-ui;
