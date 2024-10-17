@@ -195,9 +195,9 @@ $(document).ready(function () {
 
     // Hover effect for image cards
     $('.image-container').on('mouseenter', function () {
-        $(this).find('.description').fadeIn();
+        $(this).find('.img-description').fadeIn(); // Show description on hover
     }).on('mouseleave', function () {
-        $(this).find('.description').fadeOut();
+        $(this).find('.img-description').fadeOut(); // Hide description when not hovering
     });
 });
 
